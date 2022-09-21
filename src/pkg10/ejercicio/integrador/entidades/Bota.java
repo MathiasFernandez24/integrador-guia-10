@@ -5,14 +5,15 @@ package pkg10.ejercicio.integrador.entidades;
  * @author Mathias Fernandez <mathias_fernandez_24@hotmail.com>
  */
 public class Bota {
-    private float base = 1000;
-    private boolean estaRoto= false;
+    private float base = 10;
+    private boolean estaRoto= true;
+    private boolean estaDestruido= false;
 
     public float getBase() {
         return base;
     }
 
-    public void setBase(int base) {
+    public void setBase(float base) {
         this.base = base;
     }
 
@@ -23,6 +24,16 @@ public class Bota {
     public void setEstaRoto(boolean estaRoto) {
         this.estaRoto = estaRoto;
     }
+
+    public boolean isEstaDestruido() {
+        return estaDestruido;
+    }
+
+    public void setEstaDestruido(boolean estaDestruido) {
+        this.estaDestruido = estaDestruido;
+    }
+
+    
 
 
 }

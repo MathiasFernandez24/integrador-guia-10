@@ -5,9 +5,10 @@ package pkg10.ejercicio.integrador.entidades;
  */
 public class Guante {
 
-    int base = 1;
-    int tiempoDisparo = 1;
-    private boolean estaRoto = false;
+    private int base = 5;
+    private int tiempoDisparo = 1;
+    private boolean estaRoto = true;
+    private boolean estaDestruido = false;
 
     public int getBase() {
         return base;
@@ -32,6 +33,17 @@ public class Guante {
     public void setEstaRoto(boolean estaRoto) {
         this.estaRoto = estaRoto;
     }
+
+    public boolean isEstaDestruido() {
+        return estaDestruido;
+    }
+
+    public void setEstaDestruido(boolean estaDestruido) {
+        this.estaDestruido = estaDestruido;
+    }
+    
+
+   
 
    
 

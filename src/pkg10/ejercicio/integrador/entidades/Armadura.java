@@ -11,7 +11,7 @@ public class Armadura {
     private Bota bD=new Bota();
     private float salud = 100;
     private Integer dureza;
-    private float bateria = Float.MAX_VALUE-1;
+    private float bateria = 10000;
     private int base = 1;
 
     public Armadura() {
