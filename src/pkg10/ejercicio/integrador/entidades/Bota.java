@@ -5,8 +5,8 @@ package pkg10.ejercicio.integrador.entidades;
  * @author Mathias Fernandez <mathias_fernandez_24@hotmail.com>
  */
 public class Bota {
-    private float base = 10;
-    private boolean estaRoto= true;
+    private float base = 2;
+    private boolean estaRoto= false;
     private boolean estaDestruido= false;
 
     public float getBase() {

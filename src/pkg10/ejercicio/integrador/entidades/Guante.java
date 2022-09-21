@@ -5,9 +5,9 @@ package pkg10.ejercicio.integrador.entidades;
  */
 public class Guante {
 
-    private int base = 5;
+    private int base = 1;
     private int tiempoDisparo = 1;
-    private boolean estaRoto = true;
+    private boolean estaRoto = false;
     private boolean estaDestruido = false;
 
     public int getBase() {

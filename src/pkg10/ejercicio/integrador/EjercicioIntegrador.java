@@ -7,6 +7,7 @@ package pkg10.ejercicio.integrador;
 
 import java.util.concurrent.ThreadLocalRandom;
 import pkg10.ejercicio.integrador.entidades.Armadura;
+import pkg10.ejercicio.integrador.entidades.ObjetoVolador;
 import pkg10.ejercicio.integrador.servicios.Jarvis;
 
 /**
@@ -20,15 +21,25 @@ public class EjercicioIntegrador {
      */
     public static void main(String[] args) {
 
-        Jarvis js = new Jarvis();
-        Armadura mark42 = new Armadura();
-
-        js.caminar(mark42);
+        Jarvis js = new Jarvis(); //Crear Jarvis (servicio general)
+        Armadura mark42 = new Armadura();//Crear Armadura
+        
+        //crear objetos voladores en Vector
+        ObjetoVolador[] ovnis = new ObjetoVolador[10];
+        for (int i = 0; i < 10; i++) {
+            ovnis[i]= new ObjetoVolador();
+        }
+        js.mostrarRadar(ovnis);
+        
+        
+//        js.estadoArmadura(mark42);
+        js.atacar(mark42, ovnis);
+        js.mostrarRadar(ovnis);
+//        js.volar(mark42);
         js.estadoArmadura(mark42);
-        js.revisandoDispositivo(mark42);
-        js.estadoArmadura(mark42);
-        System.out.println(js.calcularDistanciaRadar(1, 1, 1));
-        System.out.println(ThreadLocalRandom.current().nextInt(-1, 2));
+//        js.revisandoDispositivo(mark42);
+//        js.estadoArmadura(mark42);
+//        System.out.println(js.calcularDistanciaRadar(1, 1, 1));
     }
 
 }
